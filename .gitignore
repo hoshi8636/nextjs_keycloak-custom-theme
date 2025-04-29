@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# docker/keycloak volumes
+keycloak_data/
+*.pid
+
+# logs
+*.log
+
+# keycloak realm export (optional)
+realm-export.json
