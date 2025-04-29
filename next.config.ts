@@ -1,7 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  matcher: ["/((?!api|_next|favicon.ico).*)"],
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;
