@@ -12,5 +12,15 @@ services:
       - ./keycloak/themes:/opt/keycloak/themes
       - keycloak_data:/opt/keycloak/data
 
+  nextjs:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    container_name: nextjs
+    ports:
+      - 3000:3000
+    env_file:
+      - .env.local
+
 volumes:
   keycloak_data:
